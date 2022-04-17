@@ -24,12 +24,11 @@
 }
 
 // colours
+$color-primary: #000;
 $transparent: #fff;
 $color-black: #000;
 $color-white: #fff;
-$color-primary: #000;
 $color-secondary: #d5bd96;
-
 // custom colours
 $color-background: #161410;
 $color-container: lighten($color-background, 80%);
@@ -100,8 +99,8 @@ canvas {
       top: -6px;
       left: -6px;
       width: 0%;
-      height: 0%;
       content: "";
+      height: 0%;
       border: solid $color-white 6px;
       border-radius: 50%;
       opacity: 0;

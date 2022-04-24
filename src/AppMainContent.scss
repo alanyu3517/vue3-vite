@@ -1,0 +1,10 @@
+@use "@/styles/global.scss";
+
+.AppMainContent-container {
+  position: absolute;
+  top: global.$headerHight;
+  left: global.$menuWidth;
+  height: calc(100% - global.$headerHight);
+  width: calc(100% - global.$menuWidth);
+  background: blue;
+}

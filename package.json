@@ -10,6 +10,7 @@
     "start": "yarn dev & wait-on tcp:3000 -v"
   },
   "dependencies": {
+    "@vueuse/core": "^8.3.1",
     "rollup": "^2.70.2",
     "vue": "~3.2",
     "vue-router": "~4.0",

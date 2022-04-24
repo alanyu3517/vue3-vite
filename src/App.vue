@@ -11,7 +11,6 @@ import HelloWorld from "@/views/HelloWorld.vue";
 
 <style lang="scss">
 #app {
-  margin-top: 60px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;

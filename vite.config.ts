@@ -29,6 +29,20 @@ export default defineConfig({
         drop_debugger: true,
       },
     },
+    lib: {
+      entry: path.resolve(__dirname, "lib/main.js"),
+      name: "vue-test",
+      fileName: (format) => `vue-test.${format}.js`,
+    },
+    sourcemap: false,
+    rollupOptions: {
+      external: ["vue"],
+      output: {
+        globals: {
+          vue: "Vue",
+        },
+      },
+    },
   },
   server: {
     https: false,

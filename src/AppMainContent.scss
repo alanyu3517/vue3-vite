@@ -1,4 +1,4 @@
-@use "@/styles/global.scss";
+@use "./styles/global.scss";
 
 .AppMainContent-container {
   position: absolute;
@@ -7,4 +7,10 @@
   height: calc(100% - global.$headerHight);
   width: calc(100% - global.$menuWidth);
   background: blue;
+  transition: all 0.5s ease-in-out;;
+
+  &.hidden-menu{
+    left: 0;
+    width: 100%;
+  }
 }

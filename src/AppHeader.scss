@@ -1,10 +1,40 @@
-@use "@/styles/global.scss";
+@use "./styles/global.scss";
 
-.AppHeader-container{
+.AppHeader-container {
   position: absolute;
   top: 0px;
   left: global.$menuWidth;
   width: calc(100% - global.$menuWidth);
   height: global.$headerHight;
-  background: #000;
+  background: white;
+  transition: all 0.5s ease-in-out;;
+
+  &.hidden-menu{
+    left: 0;
+    width: 100%;
+  }
+
+  .header-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+
+    .icon{
+      width: 25px;
+      height: 25px;
+      color: black;
+      cursor: pointer;
+    }
+
+    .menu {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-@use "@/styles/global.scss";
+@use "./styles/global.scss";
 
 .AppMenu-container {
   position: absolute;
@@ -7,4 +7,10 @@
   height: 100%;
   width: global.$menuWidth;
   background: red;
+  transition: all 0.5s ease-in-out;
+  margin-left: 0;
+
+  &.hidden-menu{
+    margin-left: - global.$menuWidth;
+  }
 }
